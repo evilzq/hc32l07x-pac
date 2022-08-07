@@ -76,23 +76,7 @@ pub union Vector {
 #[doc(hidden)]
 #[link_section = ".vector_table.interrupts"]
 #[no_mangle]
-pub static __INTERRUPTS: [Vector; 48] = [
-    Vector { _reserved: 0 },
-    Vector { _reserved: 0 },
-    Vector { _reserved: 0 },
-    Vector { _reserved: 0 },
-    Vector { _reserved: 0 },
-    Vector { _reserved: 0 },
-    Vector { _reserved: 0 },
-    Vector { _reserved: 0 },
-    Vector { _reserved: 0 },
-    Vector { _reserved: 0 },
-    Vector { _reserved: 0 },
-    Vector { _reserved: 0 },
-    Vector { _reserved: 0 },
-    Vector { _reserved: 0 },
-    Vector { _reserved: 0 },
-    Vector { _reserved: 0 },
+pub static __INTERRUPTS: [Vector; 32] = [
     Vector {
         _handler: PORTA_IRQHANDLER,
     },
@@ -194,70 +178,70 @@ pub static __INTERRUPTS: [Vector; 48] = [
 #[derive(Copy, Clone, Debug, PartialEq, Eq)]
 #[repr(u16)]
 pub enum Interrupt {
-    #[doc = "16 - PORTA_IRQHandler"]
-    PORTA_IRQHANDLER = 16,
-    #[doc = "17 - PORTB_IRQHandler"]
-    PORTB_IRQHANDLER = 17,
-    #[doc = "18 - PORTC_E_IRQHandler"]
-    PORTC_E_IRQHANDLER = 18,
-    #[doc = "19 - PORTD_F_IRQHandler"]
-    PORTD_F_IRQHANDLER = 19,
-    #[doc = "20 - DMAC_IRQHandler"]
-    DMAC_IRQHANDLER = 20,
-    #[doc = "21 - PORTD_IRQHandler"]
-    TIM3_IRQHANDLER = 21,
-    #[doc = "22 - UART0_2_IRQHandler"]
-    UART0_2_IRQHANDLER = 22,
-    #[doc = "23 - UART1_3_IRQHandler"]
-    UART1_3_IRQHANDLER = 23,
-    #[doc = "24 - LPUART0_IRQHandler"]
-    LPUART0_IRQHANDLER = 24,
-    #[doc = "25 - LPUART1_IRQHandler"]
-    LPUART1_IRQHANDLER = 25,
-    #[doc = "26 - SPI0_I2S0_IRQHandler"]
-    SPI0_I2S0_IRQHANDLER = 26,
-    #[doc = "27 - SPI1_I2S1_IRQHandler"]
-    SPI1_I2S1_IRQHANDLER = 27,
-    #[doc = "28 - I2C0_IRQHandler"]
-    I2C0_IRQHANDLER = 28,
-    #[doc = "29 - I2C1_IRQHandler"]
-    I2C1_IRQHANDLER = 29,
-    #[doc = "30 - TIM0_IRQHandler"]
-    TIM0_IRQHANDLER = 30,
-    #[doc = "31 - TIM1_IRQHandler"]
-    TIM1_IRQHANDLER = 31,
-    #[doc = "32 - TIM2_IRQHandler"]
-    TIM2_IRQHANDLER = 32,
-    #[doc = "33 - LPTIM0_1_IRQHandler"]
-    LPTIM0_1_IRQHANDLER = 33,
-    #[doc = "34 - TIM4_IRQHandler"]
-    TIM4_IRQHANDLER = 34,
-    #[doc = "35 - TIM5_IRQHandler"]
-    TIM5_IRQHANDLER = 35,
-    #[doc = "36 - TIM6_IRQHandler"]
-    TIM6_IRQHANDLER = 36,
-    #[doc = "37 - PCA_IRQHandler"]
-    PCA_IRQHANDLER = 37,
-    #[doc = "38 - WDT_IRQHandler"]
-    WDT_IRQHANDLER = 38,
-    #[doc = "39 - RTC_IRQHandler"]
-    RTC_IRQHANDLER = 39,
-    #[doc = "40 - ADC_DAC_IRQHandler"]
-    ADC_DAC_IRQHANDLER = 40,
-    #[doc = "41 - PCNT_IRQHandler"]
-    PCNT_IRQHANDLER = 41,
-    #[doc = "42 - VC0_1_2_LVD_IRQHandler"]
-    VC0_1_2_LVD_IRQHANDLER = 42,
-    #[doc = "43 - USBFS_IRQHandler"]
-    USBFS_IRQHANDLER = 43,
-    #[doc = "44 - CAN_IRQHandler"]
-    CAN_IRQHANDLER = 44,
-    #[doc = "45 - LCD_IRQHandler"]
-    LCD_IRQHANDLER = 45,
-    #[doc = "46 - FLASH_RAM_IRQHandler"]
-    FLASH_RAM_IRQHANDLER = 46,
-    #[doc = "47 - PORTD_IRQHandler"]
-    CLKTRIM_CTS_IRQHANDLER = 47,
+    #[doc = "0 - PORTA_IRQHandler"]
+    PORTA_IRQHANDLER = 0,
+    #[doc = "1 - PORTB_IRQHandler"]
+    PORTB_IRQHANDLER = 1,
+    #[doc = "2 - PORTC_E_IRQHandler"]
+    PORTC_E_IRQHANDLER = 2,
+    #[doc = "3 - PORTD_F_IRQHandler"]
+    PORTD_F_IRQHANDLER = 3,
+    #[doc = "4 - DMAC_IRQHandler"]
+    DMAC_IRQHANDLER = 4,
+    #[doc = "5 - TIM3_IRQHandler"]
+    TIM3_IRQHANDLER = 5,
+    #[doc = "6 - UART0_2_IRQHandler"]
+    UART0_2_IRQHANDLER = 6,
+    #[doc = "7 - UART1_3_IRQHandler"]
+    UART1_3_IRQHANDLER = 7,
+    #[doc = "8 - LPUART0_IRQHandler"]
+    LPUART0_IRQHANDLER = 8,
+    #[doc = "9 - LPUART1_IRQHandler"]
+    LPUART1_IRQHANDLER = 9,
+    #[doc = "10 - SPI0_I2S0_IRQHandler"]
+    SPI0_I2S0_IRQHANDLER = 10,
+    #[doc = "11 - SPI1_I2S1_IRQHandler"]
+    SPI1_I2S1_IRQHANDLER = 11,
+    #[doc = "12 - I2C0_IRQHandler"]
+    I2C0_IRQHANDLER = 12,
+    #[doc = "13 - I2C1_IRQHandler"]
+    I2C1_IRQHANDLER = 13,
+    #[doc = "14 - TIM0_IRQHandler"]
+    TIM0_IRQHANDLER = 14,
+    #[doc = "15 - TIM1_IRQHandler"]
+    TIM1_IRQHANDLER = 15,
+    #[doc = "16 - TIM2_IRQHandler"]
+    TIM2_IRQHANDLER = 16,
+    #[doc = "17 - LPTIM0_1_IRQHandler"]
+    LPTIM0_1_IRQHANDLER = 17,
+    #[doc = "18 - TIM4_IRQHandler"]
+    TIM4_IRQHANDLER = 18,
+    #[doc = "19 - TIM5_IRQHandler"]
+    TIM5_IRQHANDLER = 19,
+    #[doc = "20 - TIM6_IRQHandler"]
+    TIM6_IRQHANDLER = 20,
+    #[doc = "21 - PCA_IRQHandler"]
+    PCA_IRQHANDLER = 21,
+    #[doc = "22 - WDT_IRQHandler"]
+    WDT_IRQHANDLER = 22,
+    #[doc = "23 - RTC_IRQHandler"]
+    RTC_IRQHANDLER = 23,
+    #[doc = "24 - ADC_DAC_IRQHandler"]
+    ADC_DAC_IRQHANDLER = 24,
+    #[doc = "25 - PCNT_IRQHandler"]
+    PCNT_IRQHANDLER = 25,
+    #[doc = "26 - VC0_1_2_LVD_IRQHandler"]
+    VC0_1_2_LVD_IRQHANDLER = 26,
+    #[doc = "27 - USBFS_IRQHandler"]
+    USBFS_IRQHANDLER = 27,
+    #[doc = "28 - CAN_IRQHandler"]
+    CAN_IRQHANDLER = 28,
+    #[doc = "29 - LCD_IRQHandler"]
+    LCD_IRQHANDLER = 29,
+    #[doc = "30 - FLASH_RAM_IRQHandler"]
+    FLASH_RAM_IRQHANDLER = 30,
+    #[doc = "31 - PORTD_IRQHandler"]
+    CLKTRIM_CTS_IRQHANDLER = 31,
 }
 unsafe impl cortex_m::interrupt::InterruptNumber for Interrupt {
     #[inline(always)]

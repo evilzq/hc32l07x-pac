@@ -31218,162 +31218,162 @@
             <interrupt>
                 <name>PORTA_IRQHandler</name>
                 <description>PORTA_IRQHandler</description>
-                <value>16</value>
+                <value>0</value>
             </interrupt>
             <interrupt>
                 <name>PORTB_IRQHandler</name>
                 <description>PORTB_IRQHandler</description>
-                <value>17</value>
+                <value>1</value>
             </interrupt>
             <interrupt>
                 <name>PORTC_E_IRQHandler</name>
                 <description>PORTC_E_IRQHandler</description>
-                <value>18</value>
+                <value>2</value>
             </interrupt>
             <interrupt>
                 <name>PORTD_F_IRQHandler</name>
                 <description>PORTD_F_IRQHandler</description>
-                <value>19</value>
+                <value>3</value>
             </interrupt>
             <interrupt>
                 <name>DMAC_IRQHandler</name>
                 <description>DMAC_IRQHandler</description>
-                <value>20</value>
+                <value>4</value>
             </interrupt>
             <interrupt>
                 <name>TIM3_IRQHandler</name>
                 <description>TIM3_IRQHandler</description>
-                <value>21</value>
+                <value>5</value>
             </interrupt>
             <interrupt>
                 <name>UART0_2_IRQHandler</name>
                 <description>UART0_2_IRQHandler</description>
-                <value>22</value>
+                <value>6</value>
             </interrupt>
             <interrupt>
                 <name>UART1_3_IRQHandler</name>
                 <description>UART1_3_IRQHandler</description>
-                <value>23</value>
+                <value>7</value>
             </interrupt>
             <interrupt>
                 <name>LPUART0_IRQHandler</name>
                 <description>LPUART0_IRQHandler</description>
-                <value>24</value>
+                <value>8</value>
             </interrupt>
             <interrupt>
                 <name>LPUART1_IRQHandler</name>
                 <description>LPUART1_IRQHandler</description>
-                <value>25</value>
+                <value>9</value>
             </interrupt>
             <interrupt>
                 <name>SPI0_I2S0_IRQHandler</name>
                 <description>SPI0_I2S0_IRQHandler</description>
-                <value>26</value>
+                <value>10</value>
             </interrupt>
             <interrupt>
                 <name>SPI1_I2S1_IRQHandler</name>
                 <description>SPI1_I2S1_IRQHandler</description>
-                <value>27</value>
+                <value>11</value>
             </interrupt>
             <interrupt>
                 <name>I2C0_IRQHandler</name>
                 <description>I2C0_IRQHandler</description>
-                <value>28</value>
+                <value>12</value>
             </interrupt>
             <interrupt>
                 <name>I2C1_IRQHandler</name>
                 <description>I2C1_IRQHandler</description>
-                <value>29</value>
+                <value>13</value>
             </interrupt>
             <interrupt>
                 <name>TIM0_IRQHandler</name>
                 <description>TIM0_IRQHandler</description>
-                <value>30</value>
+                <value>14</value>
             </interrupt>
             <interrupt>
                 <name>TIM1_IRQHandler</name>
                 <description>TIM1_IRQHandler</description>
-                <value>31</value>
+                <value>15</value>
             </interrupt>
             <interrupt>
                 <name>TIM2_IRQHandler</name>
                 <description>TIM2_IRQHandler</description>
-                <value>32</value>
+                <value>16</value>
             </interrupt>
             <interrupt>
                 <name>LPTIM0_1_IRQHandler</name>
                 <description>LPTIM0_1_IRQHandler</description>
-                <value>33</value>
+                <value>17</value>
             </interrupt>
             <interrupt>
                 <name>TIM4_IRQHandler</name>
                 <description>TIM4_IRQHandler</description>
-                <value>34</value>
+                <value>18</value>
             </interrupt>
             <interrupt>
                 <name>TIM5_IRQHandler</name>
                 <description>TIM5_IRQHandler</description>
-                <value>35</value>
+                <value>19</value>
             </interrupt>
             <interrupt>
                 <name>TIM6_IRQHandler</name>
                 <description>TIM6_IRQHandler</description>
-                <value>36</value>
+                <value>20</value>
             </interrupt>
             <interrupt>
                 <name>PCA_IRQHandler</name>
                 <description>PCA_IRQHandler</description>
-                <value>37</value>
+                <value>21</value>
             </interrupt>
             <interrupt>
                 <name>WDT_IRQHandler</name>
                 <description>WDT_IRQHandler</description>
-                <value>38</value>
+                <value>22</value>
             </interrupt>
             <interrupt>
                 <name>RTC_IRQHandler</name>
                 <description>RTC_IRQHandler</description>
-                <value>39</value>
+                <value>23</value>
             </interrupt>
             <interrupt>
                 <name>ADC_DAC_IRQHandler</name>
                 <description>ADC_DAC_IRQHandler</description>
-                <value>40</value>
+                <value>24</value>
             </interrupt>
             <interrupt>
                 <name>PCNT_IRQHandler</name>
                 <description>PCNT_IRQHandler</description>
-                <value>41</value>
+                <value>25</value>
             </interrupt>
             <interrupt>
                 <name>VC0_1_2_LVD_IRQHandler</name>
                 <description>VC0_1_2_LVD_IRQHandler</description>
-                <value>42</value>
+                <value>26</value>
             </interrupt>
             <interrupt>
                 <name>USBFS_IRQHandler</name>
                 <description>USBFS_IRQHandler</description>
-                <value>43</value>
+                <value>27</value>
             </interrupt>
             <interrupt>
                 <name>CAN_IRQHandler</name>
                 <description>CAN_IRQHandler</description>
-                <value>44</value>
+                <value>28</value>
             </interrupt>
             <interrupt>
                 <name>LCD_IRQHandler</name>
                 <description>LCD_IRQHandler</description>
-                <value>45</value>
+                <value>29</value>
             </interrupt>
             <interrupt>
                 <name>FLASH_RAM_IRQHandler</name>
                 <description>FLASH_RAM_IRQHandler</description>
-                <value>46</value>
+                <value>30</value>
             </interrupt>
             <interrupt>
                 <name>CLKTRIM_CTS_IRQHandler</name>
                 <description>PORTD_IRQHandler</description>
-                <value>47</value>
+                <value>31</value>
             </interrupt>
             <registers>
                 <register>
@@ -36314,11 +36314,6 @@
                 <size>0x34</size>
                 <usage>registers</usage>
             </addressBlock>
-            <interrupt>
-                <name>TIM3_IRQHandler</name>
-                <description>PORTD_IRQHandler</description>
-                <value>21</value>
-            </interrupt>
             <registers>
                 <register>
                     <name>ARR</name>
